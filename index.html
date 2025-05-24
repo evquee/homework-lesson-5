@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>Це просто тег div, він має вагу 1.</div>
+    <div class="first">Це селектор класу .first, він має вагу 10.</div>
+    <div id="second">Це вже селектор id #second, він має вагу 100.</div>
+    <div title="third">Це селектор з атрибутом [title=third], він також має вагу 10.</div>
+    <div style="color: blueviolet;">А цей взагалі має inline-стиль, він важить 1000.</div>
+    <div>
+        <p>Цей тег прямо є вкладеним у інший селектором div > p, разом у них вага 2.</p>
+    </div>
+    <div>Тут я використаю div + p</div>
+    <p>І цей тег є сестринським до попереднього, між ними плюсік, тому тут вага 2.</p>
+    <p>А цей вже не сестринський, тому до нього стиль не застосується.</p>
+    <div>
+        <ul>
+            <li>Тут застосовується селектор div ul li. Цей li є вкладеним у div не напряму, а на третьому рівні.
+                <ul>
+                    <li>І навіть на п'ятому рівні вкладеності, він всеодно успадкує стиль, а вага тут 3.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <p class="fourth">Це селектор div p.fourth, тобто тег з класом всередині іншого тега, тут вага 12.</p>
+    </div>
+    <div id="end" class="end" title="end">А цей тег має id, class і атрибут, тому селектор виглядає якось div#end.end[title=end] у нього вага 121.</div>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 21px;
+}
+
+body {
+    background-color: palevioletred;
+}
+
+div {
+    color: rgb(167, 226, 206);
+}
+
+.first {
+    color: azure;
+}
+
+#second {
+    color: bisque;
+}
+
+[title=third] {
+    color: lightgoldenrodyellow;
+}
+
+div > p {
+    color: lightblue;
+}
+
+div + p {
+    color: lightgreen;
+}
+
+div ul li {
+    color: lightgrey;
+}
+
+div p.fourth {
+    color: lightcyan;
+}
+
+div#end.end[title=end] {
+    color: lightsalmon;
+}
